@@ -113,6 +113,7 @@ nav ul li:last-child a::after {
 }
 .banner-button {
   margin-top: 35px;
+  margin-bottom: 20px;
 }
 .btn-primary {
   font-size: 18px;
