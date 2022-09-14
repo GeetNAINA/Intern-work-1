@@ -43,12 +43,20 @@ nav a{
 }
 nav li{
   display: inline-block;
-  border-right: 1px solid #4d4d4d;
-  height: 15px;
+  
+  /* border-right: 1px solid  */
+}
+nav ul li a::after {
+    content: "";
+    width: 1px;
+    height: 13px;
+    background-color: #4d4d4d;;
+    display: inline-block;
+    margin-left: 23px;
 }
 
-nav li:last-child{
-  border-right: none;
+nav ul li:last-child a::after {
+  display: none;
 }
 .icon{
   display: none;
@@ -68,9 +76,10 @@ nav li:last-child{
 
 /*Start banner */
 .banner {
-  height: 470px;
+  height: auto;
   background: url('../images/banner1.png') no-repeat;
   background-size: cover;
+  padding: 0 40px;
 
 }
 
@@ -130,6 +139,13 @@ nav li:last-child{
 /*End banner */
 
 /*Start Services */
+.service {
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+
+
 
 .services-item__icons {
   font-size: 50px;
@@ -151,30 +167,30 @@ nav li:last-child{
 }
 
 .services-item__btn {
-  padding: 40px 20px;
+  padding-top : 40px;
+  padding-bottom: 10px;
 }
 
 .services-item__desc p{
   font-size: 14px;
   line-height: 14px;
-  padding: 0 15px;
   margin-bottom: 0;
   color: #4e4e4e;
 }
-/* 
+
 .container-custom{
   max-width: 970px;
-} */
+}
 
 
 
 
 .title {
-  padding: 50px;
   color: #676f75;
   font-size: 48px;
   line-height: 48px;
   text-align: center;
+  margin-bottom: 50px
 }
 
 
@@ -182,37 +198,38 @@ nav li:last-child{
 /*End Services */
 
 /* start section contact */
+.container-customize {
+  max-width: 850px;
+}
 .contact {
   background: url('../images/contact-bg.png') no-repeat;
   background-size: cover;
+  padding-top: 55px;
+  padding-bottom: 30px;
 }
 
-.contact h1 {
+.contact h2 {
+  font-weight: bold;
   text-align: center;
   color: #4cc0e0;
   font-size: 30px;
-  padding-top: 40px;
   line-height: 30px;
 }
 
 .contact__desc {
   text-align: center;
   color: #ffffff;
-  padding: 30px 155px;
   font-size: 16px;
+  margin: 30px;
 }
 
 .contact-btn {
   color: #ffffff;
   text-decoration: none;
   background-color: #499200;
-  padding: 10px 50px;
+  padding: 12px 70px;
 }
 
-.con {
-  max-width: 940px;
-  max-height: 607px;
-}
 
 label {
   color: #ffffff;
@@ -227,12 +244,14 @@ textarea {
 /* end section contact */
 
 /* Start footer */
+footer {
+  padding: 30px;
+}
 .footer-text {
   color: #6f6f6f;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  padding: 25px;
 }
 
 /* End footer */
@@ -242,9 +261,10 @@ textarea {
   .navbar .navbar-brand {
     padding: 0px;
   }
+
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1037px) {
   .phone {
     display: none;
   }
@@ -289,7 +309,6 @@ textarea {
   }
 
   nav li {
-    border-right:none ;
     padding: 20px;
   }
 
@@ -305,6 +324,9 @@ textarea {
   }
   .icon:hover{
    color:  #ec4c4c;
+  }
+  nav ul li a::after {
+    display: none;
   }
 }
 /*End responsive*/
