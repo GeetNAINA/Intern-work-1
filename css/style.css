@@ -102,6 +102,9 @@ nav li:last-child{
   border: none;
   border-radius: 0;
 }
+.banner-button {
+  margin-top: 35px;
+}
 .btn-primary {
   font-size: 18px;
   line-height: 18px;
@@ -219,8 +222,6 @@ textarea {
   height: 140px;
   resize: none;
 }
-
-
 
 /* end section contact */
 
