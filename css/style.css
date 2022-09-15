@@ -94,7 +94,7 @@ nav ul li:last-child a::after {
   padding-left: 10px;
 } */
 
-.content-slider h1 {
+.content-slider h2 {
   font-size: 48px;
   color: #ffffff;
   font-weight: bold;
@@ -265,12 +265,6 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
-.phone {
-  display: none;
-}
-
-}
 @media screen and (max-width: 1024px) {
   .contact__desc {
     padding: 0  1px;
@@ -278,10 +272,30 @@ footer {
 }
 
 /*End responsive*/
-@media (max-width: 350px){
+@media (max-width: 991px){
+  .phone {
+    display: none;
+  }
 .banner {
   padding: 40px 0;
 }
+.content-slider h2 {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 35px;
+}
+
+
+.contact h2 {
+  font-size: 25px;
+}
+
+
+
 }
 /*Start responsive */
 @media (max-width: 1000px){
