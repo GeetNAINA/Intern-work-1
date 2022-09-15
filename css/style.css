@@ -79,7 +79,6 @@ nav ul li:last-child a::after {
   height: auto;
   background: url('../images/banner1.png') no-repeat;
   background-size: cover;
-  padding: 0 40px;
 
 }
 
@@ -88,12 +87,13 @@ nav ul li:last-child a::after {
 }
 
 .phone {
-  padding-top: 25px;
+  padding-top: 32px;
 }
 
-.content-slider{
+/* .content-slider{
   padding-left: 10px;
-}
+} */
+
 .content-slider h1 {
   font-size: 48px;
   color: #ffffff;
@@ -135,7 +135,8 @@ nav ul li:last-child a::after {
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
-  background-color: #499200;;
+  background-color: #499200;
+  margin-top: 25px;
 }
 /*End banner */
 
@@ -259,25 +260,29 @@ footer {
   .navbar .navbar-brand {
     padding: 0px;
   }
-
-}
-
-@media screen and (max-width: 1037px) {
-  .phone {
+  .phone{
     display: none;
   }
+}
 
-  .content-slider {
-    margin: 0 auto;
-  }
+@media (max-width: 991px) {
+.phone {
+  display: none;
+}
 
+}
+@media screen and (max-width: 1024px) {
   .contact__desc {
     padding: 0  1px;
   }
 }
 
 /*End responsive*/
-
+@media (max-width: 350px){
+.banner {
+  padding: 40px 0;
+}
+}
 /*Start responsive */
 @media (max-width: 1000px){
   nav .icon {
